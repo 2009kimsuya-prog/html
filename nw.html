@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Управление студентами</title>
+    <title>Chifirok — интернет-бар</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
- 
-    <header>
-        <a href="#">Главная</a>
-        <a href="#">Студенты</a>
-        <a href="#">О нас</a>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="#">Chifirok<span class="logo-accent">_net</span></a>
+
+            <nav class="menu">
+                <a href="#menu">Тарифы</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        
-       
-        <div class="page-title">
-            <h1>Управление студентами</h1>
-            <p>Добавляйте студентов и просматривайте список группы</p>
-        </div>
+    <main>
+        <section class="hero" id="about">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="subtitle">Интернет-бар 24/7</p>
 
-  
-        <div class="card">
-            <h2>Добавить студента</h2>
-            <form>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="first-name">Имя</label>
-                        <input type="text" id="first-name" placeholder="Введите имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Фамилия</label>
-                        <input type="text" id="last-name" placeholder="Введите фамилию">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Введите email">
-                    </div>
-                    <div class="form-group">
-                        <label for="group">Группа</label>
-                        <input type="text" id="group" placeholder="Например: IT-24">
-                    </div>
+                    <h1>Быстрый интернет, мощные ПК и напитки рядом</h1>
+
+                    <p class="hero-description">
+                        Играйте, учитесь и работайте в комфортной атмосфере: быстрый интернет,
+                        удобные места и бар с энергетиками, закусками и горячей лапшой.
+                    </p>
+
+                    <a class="button" href="#menu">
+                        Посмотреть тарифы
+                    </a>
                 </div>
-                <button type="submit" class="btn-submit">Добавить студента</button>
-            </form>
-        </div>
-
-  
-        <div class="card">
-            <h2>Список студентов</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Имя</th>
-                            <th>Фамилия</th>
-                            <th>Email</th>
-                            <th>Группа</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Арман</td>
-                            <td>Алиев</td>
-                            <td>arman@mail.com</td>
-                            <td>IT-24</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Данияр</td>
-                            <td>Садыков</td>
-                            <td>daniyar@mail.com</td>
-                            <td>IT-25</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Алина</td>
-                            <td>Ким</td>
-                            <td>alina@mail.com</td>
-                            <td>IT-24</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Марат</td>
-                            <td>Иванов</td>
-                            <td>marat@mail.com</td>
-                            <td>IT-26</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="hero-picture">
+                    <img src="hero.svg" alt="Игровой компьютер с монитором, клавиатурой и мышью в интернет-баре.">
+                </div>
             </div>
-        </div>
+        </section>
 
-    
-        <div class="card about-section">
-            <h2>О проекте</h2>
-            <p><strong>Student Manager</strong> — простой проект для управления списком студентов.</p>
-            <a href="#">Подробнее</a>
-        </div>
+        <section class="drinks-section section" id="menu">
+            <div class="container">
+                <h2>Тарифы и бар</h2>
 
-    </div>
+                <p class="section-description">
+                    Выберите подходящий вариант: на час, на всю ночь или в VIP-зоне.
+                </p>
 
-   
-    <footer>
-        &copy; 2026 Student Manager
-    </footer>
+                <div class="cards">
 
+                    <div class="card">
+                        <span class="card-number">01</span>
+                        <h3>Час в зале</h3>
+                        <p>Игровой ПК в общем зале, быстрый интернет и удобное кресло.</p>
+                        <span class="card-price">700тг / час</span>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-number">02</span>
+                        <h3>Ночной пакет</h3>
+                        <p>8 часов за ПК с 23:00 до 07:00 — для долгих игровых сессий.</p>
+                        <span class="card-price">3000тг</span>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-number">03</span>
+                        <h3>VIP-зона</h3>
+                        <p>Топовые компьютеры, большие мониторы и тихая обстановка для своей компании.</p>
+                        <span class="card-price">1200тг / час</span>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-number">04</span>
+                        <h3>Бар</h3>
+                        <p>Энергетики, чай, кофе, чипсы и горячая лапша — всё можно заказать прямо к месту.</p>
+                        <span class="card-price">от 500тг</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+
+                <p class="section-description">
+                    Приходите без записи или бронируйте место заранее.
+                </p>
+
+                <div class="contacts">
+                    <p><span class="contacts-label">Адрес:</span>Дом Лёни</p>
+                    <p><span class="contacts-label">Телефон:</span> +7 (700) 000-00-00</p>
+                    <p><span class="contacts-label">Время работы:</span> круглосуточно</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
