@@ -1,107 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chifirok — интернет-бар</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f3ee">
+	<meta name="description" content="Каталог мобильных игр с оценками рекламы и pay-to-win.">
+	<title>Без доната? — Каталог мобильных игр</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="header">
-        <div class="container header-inner">
-            <a class="logo" href="#">Chifirok<span class="logo-accent">_net</span></a>
+	<header class="topbar">
+		<a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">Б</span>без доната<span class="brand-dot">?</span></a>
+		<nav aria-label="Основная навигация"><a class="active" href="#catalog">Каталог</a><a href="#method">Как считаем</a></nav>
+		<a class="submit-link" href="mailto:hello@example.com">Предложить игру ↗</a>
+	</header>
 
-            <nav class="menu">
-                <a href="#menu">Тарифы</a>
-                <a href="#about">О нас</a>
-                <a href="#contacts">Контакты</a>
-            </nav>
-        </div>
-    </header>
+	<main id="top">
+		<section class="intro" aria-labelledby="page-title">
+			<div>
+				<p class="eyebrow"><span class="status-dot"></span>Честный взгляд до установки</p>
+				<h1 id="page-title">Игра должна<br>затягивать. <span>Не кошелёк.</span></h1>
+				<p class="intro-text">Проверяем, сколько в мобильных играх рекламы, pay-to-win и платёжных стен. Чтобы сюрпризы оставались в игре.</p>
+			</div>
+			<aside class="intro-note"><span class="note-index">01 / 03</span><p>Оцениваем три вещи отдельно. Чем ниже балл, тем спокойнее игра относится к твоему времени и деньгам.</p><a href="#method">О рубрике ↓</a></aside>
+		</section>
 
-    <main>
-        <section class="hero" id="about">
-            <div class="container hero-inner">
-                <div class="hero-content">
-                    <p class="subtitle">Интернет-бар 24/7</p>
+		<section class="catalog" id="catalog" aria-labelledby="catalog-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">Мобильные игры · демо-подборка</p><h2 id="catalog-title">Найди свою следующую игру</h2></div>
+				<p class="demo-label">● Пример интерфейса, оценки не проверены</p>
+			</div>
+			<div class="game-list">
+				<article class="game-card">
+					<div class="game-art art-garden" aria-hidden="true"><i class="sun"></i><i class="hill"></i><span>GARDEN<br>STORY</span></div>
+					<div class="game-info"><p class="game-meta">Казуальная · Пример</p><h3>Garden Story</h3><p class="summary">Собирай урожай и строй свой тихий уголок.</p><a class="store-link" href="#catalog">Страница игры ↗</a></div>
+					<div class="score low"><span>Индекс давления</span><strong>1.0</strong><span>из 3 · низкий</span></div>
+					<div class="ratings" aria-label="Демо-оценки: реклама 1 из 3, pay-to-win 1 из 3, платёжная стена 1 из 3">
+						<div class="rating"><span>Реклама</span><span class="dots"><i class="on"></i><i></i><i></i></span></div><div class="rating"><span>Pay-to-win</span><span class="dots"><i class="on"></i><i></i><i></i></span></div><div class="rating"><span>Платёжная стена</span><span class="dots"><i class="on"></i><i></i><i></i></span></div>
+					</div>
+				</article>
+				<article class="game-card">
+					<div class="game-art art-orbit" aria-hidden="true"><i class="orbit"></i><i class="planet"></i><span>STAR<br>RUNNER</span></div>
+					<div class="game-info"><p class="game-meta">Аркада · Пример</p><h3>Star Runner</h3><p class="summary">Короткие забеги по космическим трассам.</p><a class="store-link" href="#catalog">Страница игры ↗</a></div>
+					<div class="score mid"><span>Индекс давления</span><strong>2.0</strong><span>из 3 · средний</span></div>
+					<div class="ratings" aria-label="Демо-оценки: реклама 3 из 3, pay-to-win 2 из 3, платёжная стена 1 из 3">
+						<div class="rating"><span>Реклама</span><span class="dots hot"><i class="on"></i><i class="on"></i><i class="on"></i></span></div><div class="rating"><span>Pay-to-win</span><span class="dots"><i class="on"></i><i class="on"></i><i></i></span></div><div class="rating"><span>Платёжная стена</span><span class="dots"><i class="on"></i><i></i><i></i></span></div>
+					</div>
+				</article>
+				<article class="game-card">
+					<div class="game-art art-kingdom" aria-hidden="true"><i class="castle"></i><span>TINY<br>KINGDOM</span></div>
+					<div class="game-info"><p class="game-meta">Стратегия · Пример</p><h3>Tiny Kingdom</h3><p class="summary">Развивай королевство и соревнуйся с другими.</p><a class="store-link" href="#catalog">Страница игры ↗</a></div>
+					<div class="score high"><span>Индекс давления</span><strong>2.7</strong><span>из 3 · высокий</span></div>
+					<div class="ratings" aria-label="Демо-оценки: реклама 2 из 3, pay-to-win 3 из 3, платёжная стена 3 из 3">
+						<div class="rating"><span>Реклама</span><span class="dots"><i class="on"></i><i class="on"></i><i></i></span></div><div class="rating"><span>Pay-to-win</span><span class="dots hot"><i class="on"></i><i class="on"></i><i class="on"></i></span></div><div class="rating"><span>Платёжная стена</span><span class="dots hot"><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+					</div>
+				</article>
+			</div>
+		</section>
 
-                    <h1>Быстрый интернет, мощные ПК и напитки рядом</h1>
-
-                    <p class="hero-description">
-                        Играйте, учитесь и работайте в комфортной атмосфере: быстрый интернет,
-                        удобные места и бар с энергетиками, закусками и горячей лапшой.
-                    </p>
-
-                    <a class="button" href="#menu">
-                        Посмотреть тарифы
-                    </a>
-                </div>
-                <div class="hero-picture">
-                    <img src="hero.svg" alt="Игровой компьютер с монитором, клавиатурой и мышью в интернет-баре.">
-                </div>
-            </div>
-        </section>
-
-        <section class="drinks-section section" id="menu">
-            <div class="container">
-                <h2>Тарифы и бар</h2>
-
-                <p class="section-description">
-                    Выберите подходящий вариант: на час, на всю ночь или в VIP-зоне.
-                </p>
-
-                <div class="cards">
-
-                    <div class="card">
-                        <span class="card-number">01</span>
-                        <h3>Час в зале</h3>
-                        <p>Игровой ПК в общем зале, быстрый интернет и удобное кресло.</p>
-                        <span class="card-price">700тг / час</span>
-                    </div>
-
-                    <div class="card">
-                        <span class="card-number">02</span>
-                        <h3>Ночной пакет</h3>
-                        <p>8 часов за ПК с 23:00 до 07:00 — для долгих игровых сессий.</p>
-                        <span class="card-price">3000тг</span>
-                    </div>
-
-                    <div class="card">
-                        <span class="card-number">03</span>
-                        <h3>VIP-зона</h3>
-                        <p>Топовые компьютеры, большие мониторы и тихая обстановка для своей компании.</p>
-                        <span class="card-price">1200тг / час</span>
-                    </div>
-
-                    <div class="card">
-                        <span class="card-number">04</span>
-                        <h3>Бар</h3>
-                        <p>Энергетики, чай, кофе, чипсы и горячая лапша — всё можно заказать прямо к месту.</p>
-                        <span class="card-price">от 500тг</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contacts">
-            <div class="container">
-                <h2>Контакты</h2>
-
-                <p class="section-description">
-                    Приходите без записи или бронируйте место заранее.
-                </p>
-
-                <div class="contacts">
-                    <p><span class="contacts-label">Адрес:</span>Дом Лёни</p>
-                    <p><span class="contacts-label">Телефон:</span> +7 (700) 000-00-00</p>
-                    <p><span class="contacts-label">Время работы:</span> круглосуточно</p>
-                </div>
-            </div>
-        </section>
-    </main>
+		<section class="method" id="method"><div><p class="eyebrow">Оценка от 0 до 3</p><h2>Три сигнала.<br>Один понятный индекс.</h2></div><p>Индекс — среднее арифметическое оценок рекламы, pay-to-win и ранней платёжной стены. Это демонстрационная рубрика: перед настоящей разметкой критерии нужно согласовать подробнее.</p><a href="#catalog">К каталогу ↑</a></section>
+	</main>
+	<footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">Б</span>без доната<span class="brand-dot">?</span></a><p>Демо-макет · оценки не проверены</p><span>2026</span></footer>
 </body>
-
 </html>
